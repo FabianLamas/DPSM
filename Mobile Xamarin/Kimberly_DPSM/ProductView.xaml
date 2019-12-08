@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Kimberly_DPSM.ProductView">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <StackLayout Margin="10,5,10,2" Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Label Text="Avance de Auditoria" HorizontalOptions="Start"/>
+                <Label Text="25%" HorizontalTextAlignment="End"/>
+            </StackLayout>
+            <Grid Margin="10,5,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Text="Presencia" VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+                <Switch IsToggled="False" Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/>
+                <Entry Text="{Binding Price}" Placeholder="Precio" x:Name="txt_price" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Picker x:Name="pickerEstado" Title="Novedades" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+            </Grid>
+            <Button x:Name="btn_Actualizar" Text="Actualizar" CornerRadius="30" BorderColor="#075189"
+                BorderWidth="2" BackgroundColor="Transparent" VerticalOptions="End"
+                    Clicked="actualizar_click"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

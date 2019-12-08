@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Kimberly_DPSM.Configuracion">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+
+                <Grid Margin="10,10,5,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Usar Datos" Grid.Column="0" Grid.Row="0"/>
+                    <Switch IsToggled="False" Grid.Column="1" Grid.Row="0"/>
+                    <Label Text="Sync con WiFi" Grid.Column="0" Grid.Row="1"/>
+                    <Switch IsToggled="False" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="Modo Dark" Grid.Column="0" Grid.Row="2"/>
+                    <Switch IsToggled="False" Grid.Column="1" Grid.Row="2"/>
+
+                    <Label Text="Mostrar Completados" Grid.Column="0" Grid.Row="3"/>
+                    <Switch IsToggled="False" Grid.Column="1" Grid.Row="3"/>
+                    <Label Text="Permitir Notificaciones" Grid.Column="0" Grid.Row="4"/>
+                    <Switch IsToggled="False" Grid.Column="1" Grid.Row="4"/>
+
+                    <Button Text="Guardar" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2"
+                        BackgroundColor="Transparent" BorderWidth="2" BorderColor="Blue"
+                        CornerRadius="20"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

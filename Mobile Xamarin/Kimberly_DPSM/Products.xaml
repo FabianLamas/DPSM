@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Kimberly_DPSM.Products">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="sku">
+                <Setter Property="FontFamily" Value="Calibri"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+            <Style TargetType="Label" x:Key="name">
+                <Setter Property="FontFamily" Value="Calibri"/>
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout Margin="10,5,10,2" Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Label Text="Avance de Auditoria" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label Text="25%" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Button x:Name="Scan" Text="Scan"
+                        VerticalOptions="Center" HorizontalOptions="End" BackgroundColor="Transparent"
+                        BorderColor="AliceBlue" CornerRadius="30" BorderWidth="2"/>
+            </StackLayout>
+            <ListView x:Name="ProductsList" ItemTapped="itemTapped" SelectionMode="None" Margin="10,2,10,0" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding Sku}" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource sku}"/>
+                                    <Label Text="{Binding Name}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource name}"/>
+                                    <Label Text="{Binding Price}" Grid.Column="2" Grid.Row="1"/>
+                                    <BoxView Color="{Binding color}" Grid.Column="3" Grid.Row="0" Grid.RowSpan="2"/>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

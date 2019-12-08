@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kimberly_DPSM.Pages.AppShellPage"
+       xmlns:local="clr-namespace:Kimberly_DPSM"
+       
+            Shell.NavBarIsVisible="False">
+    <TabBar x:Name="tabBarMenu">
+        <Tab NavigationPage.HasNavigationBar="False" Title="Home">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE80F;"/>
+            </Tab.Icon>
+            <ShellContent Title="Home" Shell.NavBarIsVisible="False">
+                <local:MainPage/>
+            </ShellContent>
+
+        </Tab>
+        <Tab Title="Auditoria">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE932;"/>
+            </Tab.Icon>
+            <ShellContent>
+                <local:Auditorias/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Config">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE713;"/>
+            </Tab.Icon>
+            <ShellContent>
+                <local:Configuracion/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Calend.">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE787;"/>
+            </Tab.Icon>
+            <ShellContent>
+                <local:Calendario/>
+            </ShellContent>
+
+        </Tab>
+        <Tab Title="Sync">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE895;"/>
+            </Tab.Icon>
+            <ShellContent>
+                <local:Sync/>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "74343730970",
+    "firebase_url": "https://kimberly-a3a7f.firebaseio.com",
+    "project_id": "kimberly-a3a7f",
+    "storage_bucket": "kimberly-a3a7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74343730970:android:b2c99935252c4144d6a6a3",
+        "android_client_info": {
+          "package_name": "com.kimberly.kimberly_dpsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74343730970-sij282tbq40d99vt51aml5ahdnh5db71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc_k1lViDBWOXVqfiN_ztQjEKkGxHNjOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74343730970-sij282tbq40d99vt51aml5ahdnh5db71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Kimberly_DPSM.Sync">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Margin="20" VerticalOptions="Center">
+                <Button Text="Descargar Posiciones" x:Name="btn_descPosiciones" Clicked="DescPosicionesClick"
+                    BorderColor="#075189" BackgroundColor="Transparent"
+                    CornerRadius="20"
+                    BorderWidth="2"/>
+                <Button Text="Descargar Auditorias" x:Name="btn_DescAuditorias" Clicked="DescAuditoriasClick"
+                    BorderColor="#075189" BackgroundColor="Transparent"
+                    CornerRadius="20"
+                    BorderWidth="2"/>
+                <Button Text="Subir Auditorias" x:Name="btn_subirAuditorias" Clicked="subirAuditoriasClick"
+                    BorderColor="#075189" BackgroundColor="Transparent"
+                    CornerRadius="20"
+                    BorderWidth="2"/>
+                <Button Text="Descargar Categorias" x:Name="btn_categorias" Clicked="DescargarCategoriasClick"
+                    BorderColor="#075189" BackgroundColor="Transparent"
+                    CornerRadius="20"
+                    BorderWidth="2"/>
+
+                <Grid Margin="0,15,0,0" BackgroundColor="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+                    <Label Text="Auditorias Enviadas" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+                    <Label Text="3" Grid.Column="2" Grid.Row="0"/>
+                    <Label Text="Puntos de ventas recibidos" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Label Text="24" Grid.Column="2" Grid.Row="1"/>
+                    <Label Text="Productos recibidos" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <Label Text="150" Grid.Column="2" Grid.Row="2"/>
+
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
